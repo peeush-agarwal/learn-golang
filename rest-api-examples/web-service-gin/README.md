@@ -4,6 +4,11 @@
 
 - Initialize the module: `go mod init example/web-service-gin`
 - Download and install the dependency `gin`: `go get -u github.com/gin-gonic/gin`
+- Download and install `swag` for Swagger documentation: `go install github.com/swaggo/swag/cmd/swag@latest`
+  - `go get -u github.com/swaggo/files`
+  - `go get -u github.com/swaggo/gin-swagger`
+- Run `swag init`
+- Run `swag fmt`
 
 ## Run the server
 
