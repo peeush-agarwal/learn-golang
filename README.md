@@ -13,3 +13,7 @@
         - Go to terminal and verify by running `go` command in the terminal
 2. Install an IDE - Editor for writing code
     1. “Go” extension by “Go team at Google”
+
+## Tutorials
+
+[Booking App CLI](booking-app/)
