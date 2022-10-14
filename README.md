@@ -2,7 +2,9 @@
 
 ## References
 
-[Golang tutorial for beginners - TechWithNana](https://www.youtube.com/watch?v=yyUHQIec83I)
+- [Golang tutorial for beginners - TechWithNana](https://www.youtube.com/watch?v=yyUHQIec83I)
+- [Go by examples](https://gobyexample.com/)
+- [Go Web examples](https://gowebexamples.com/)
 
 ## Setup
 
@@ -16,4 +18,7 @@
 
 ## Tutorials
 
-[Booking App CLI](booking-app/)
+- [Booking App CLI](booking-app/)
+- Web
+  - [Basic HTTP server](web-examples/hello-world/)
+    - [Go Web Example - Hello World](https://gowebexamples.com/hello-world/)
