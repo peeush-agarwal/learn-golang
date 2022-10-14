@@ -34,3 +34,7 @@ go run .
   ```shell
   curl http://localhost:5000/albums/100
   ```
+
+## References
+
+- [Web service using Gin](https://go.dev/doc/tutorial/web-service-gin)
