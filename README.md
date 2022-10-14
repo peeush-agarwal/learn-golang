@@ -20,5 +20,7 @@
 
 - [Booking App CLI](booking-app/)
 - Web
-  - [Basic HTTP server](web-examples/hello-world/)
+  - [Hello world](web-examples/hello-world/)
     - [Go Web Example - Hello World](https://gowebexamples.com/hello-world/)
+  - [Basic HTTP server](web-examples/http-server/)
+    - [Go Web Example - Http server](https://gowebexamples.com/http-server/)
