@@ -26,3 +26,11 @@ go run .
   --request "POST" \
   --data '{"id": "4", "title": "The Modern Sound of Betty Carter", "artist": "Betty Carter", "price": 49.99}'
   ```
+- GET /albums/1 request
+  ```shell
+  curl http://localhost:5000/albums/1
+  ```
+- GET /albums/100 request
+  ```shell
+  curl http://localhost:5000/albums/100
+  ```
