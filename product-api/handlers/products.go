@@ -26,7 +26,7 @@ func (p *Products) ServeHTTP(rw http.ResponseWriter, r *http.Request) {
 }
 
 func (p *Products) getProducts(rw http.ResponseWriter, r *http.Request) {
-	p.l.Println("Handle Products requests")
+	p.l.Println("Handle GET Products")
 
 	lp := data.GetProducts()
 	err := lp.ToJSON(rw)
