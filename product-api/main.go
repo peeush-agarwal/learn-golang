@@ -61,6 +61,9 @@ func main() {
 	l.Println("Received terminate, graceful shutdown", sig)
 
 	// gracefully shutdown the server, waiting max 30 seconds for current operation to complete
-	ctx, _ := context.WithTimeout(context.Background(), 30*time.Second)
+	ctx, cancelFn := context.WithTimeout(context.Background(), 30*time.Second)
+	if cancelFn != nil {
+		cancelFn()
+	}
 	s.Shutdown(ctx)
 }
