@@ -9,7 +9,7 @@ import (
 // swagger:route POST /products products addProduct
 // Add a new product
 // responses:
-// 	201: noContent
+// 	201: noContentResponse
 
 // AddProduct adds a new product into the data store
 func (p *Products) AddProduct(rw http.ResponseWriter, r *http.Request) {
