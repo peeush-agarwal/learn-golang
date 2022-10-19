@@ -28,14 +28,15 @@ type KeyProduct struct{}
 
 // A list of products returned in the response
 // swagger:response productsResponse
-type productsResponse struct {
+type productsResponseWrapper struct {
 	// All products in the system
 	// in: body
 	Body []data.Product
 }
 
-// swagger:response noContent
-type productsNoContent struct {
+// No content is returned by this API endpoint
+// swagger:response noContentResponse
+type noContentResponseWrapper struct {
 }
 
 // swagger:parameters deleteProduct
@@ -44,6 +45,15 @@ type productIDParameterWrapper struct {
 	// in: path
 	// required: true
 	ID int `json:"id"`
+}
+
+// swagger:parameters addProduct
+type productParamsWrapper struct {
+	// Product data structure to create or update
+	// Note: the id field is ignored by update and create operations
+	// in: body
+	// required: true
+	Body data.Product
 }
 
 type Products struct {
