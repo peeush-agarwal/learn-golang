@@ -8,6 +8,12 @@ import (
 	"github.com/peeush-agarwal/learn-golang/product-api/data"
 )
 
+// swagger:route PUT /products/{id} products updateProduct
+// Update the specified product
+// responses:
+// 	200: productResponse
+
+// UpdateProduct updates the specified product into the data store
 func (p *Products) UpdateProduct(rw http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	id, err := strconv.Atoi(vars["id"])

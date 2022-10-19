@@ -84,11 +84,23 @@ paths:
                     $ref: '#/responses/noContentResponse'
             tags:
                 - products
+        put:
+            description: Update the specified product
+            operationId: updateProduct
+            responses:
+                "200":
+                    $ref: '#/responses/productResponse'
+            tags:
+                - products
 produces:
     - application/json
 responses:
     noContentResponse:
         description: No content is returned by this API endpoint
+    productResponse:
+        description: A single product returned in the response
+        schema:
+            $ref: '#/definitions/Product'
     productsResponse:
         description: A list of products returned in the response
         schema:
